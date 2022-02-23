@@ -1,0 +1,31 @@
+@import '../base/variables';
+
+.hero {
+	position: relative;
+	height: 250px;
+	background: url("../assets/hero.jpg") no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.mini-hero {
+	position: relative;
+	height: 90px;
+	background: url("../assets/hero.jpg") no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.title-hero {
+	font-size: 56px;
+	text-transform: uppercase;
+	color: $light-txt;
+	align-self: center;
+	justify-self: left;
+	padding-left: 56px;
+}
+.p-hero {
+	font-size: 48px;
+	color: $light-txt;
+	align-self: center;
+	justify-self: left;
+	font-weight: lighter;
+}
