@@ -1,0 +1,121 @@
+@import './variables';
+
+$buttons: (
+  error: (#d82d2d, #666),
+  success: (#52bf4a, #fff),
+  warning: (#c23435, #fff)
+);
+ 
+btn {
+  display: inline-block;
+  padding: .5em;
+  background: #ccc;
+  color: #666;
+   
+  @each $name, $colors in $buttons {
+    $bgcolor: nth($colors, 1);
+    $fontcolor: nth($colors, 2);
+     
+    &--#{$name} {
+      background-color: $bgcolor;
+      color: $fontcolor;
+    }  
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: $links;
+	font-size: 16px;
+  }
+  
+  ul {
+	list-style: none;
+  }
+  
+  p {
+	line-height: 26px;
+	font-size: 16px;
+	margin-bottom: 30px;
+	letter-spacing: 0;
+  }
+  
+  ul {
+	line-height: 26px;
+	font-size: 16px;
+	margin-bottom: 30px;
+	letter-spacing: 0;
+	padding-left: 20px;
+	margin-bottom: 40px;
+  }
+  
+  a {
+	font-weight: 400;
+	font-size: 14px;
+	text-decoration: none;
+	color: var(--links);
+  
+	&:hover {
+	  text-decoration: none;
+	  color: #80503c;
+	}
+  }
+  
+  h5, h4 {
+	font-size: 16px;
+	font-weight: bolder;
+  }
+  
+  .btn-primary {
+	background-color: $links;
+  }
+  
+  .section-title {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.3em;
+	text-transform: capitalize;
+	margin-bottom: 80px;
+	position: relative;
+  }
+  
+  @media only screen and (min-width: 768px) {
+	.section-title {
+	  line-height: 1.1em;
+	  font-size: 32px;
+	  font-size: 4rem;
+	}
+  }
+  
+  .title {
+	margin-bottom: 40px;
+	font-weight: 700;
+	align-self: flex-start;
+	line-height: 1.1em;
+	font-size: 40px;
+	font-size: 3rem;
+	text-transform: uppercase;
+  }
+  
+  @media only screen and (min-width: 768px) {
+	.title {
+	  font-size: 24px;
+	}
+  }
+  
+  @media only screen and (min-width: 1024px) {
+	.title {
+	  font-size: 60px;
+	}
+  }
+  
+  .leading--title--large {
+	font-size: 50px;
+	margin-bottom: 40px;
+	font-weight: 700;
+  }
+  
+  @media only screen and (min-width: 900px) {
+	.leading--title--large {
+	  font-size: 80px;
+	}
+  }
