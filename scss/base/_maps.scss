@@ -1,8 +1,9 @@
 @import './variables';
 
+
 $buttons: (
   error: (#d82d2d, #666),
-  success: (#52bf4a, #fff),
+  success: (#df6f43, #fff),
   warning: (#c23435, #fff)
 );
  
@@ -52,23 +53,32 @@ btn {
 	font-weight: 400;
 	font-size: 14px;
 	text-decoration: none;
-	color: var(--links);
+	color: $links;
   
 	&:hover {
 	  text-decoration: none;
 	  color: #80503c;
 	}
   }
-  
-  h5, h4 {
-	font-size: 16px;
-	font-weight: bolder;
-  }
+
+
+h5, h4 {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+h2 {
+  color: #FAFAFA;
+}
   
   .btn-primary {
 	background-color: $links;
   }
   
+  btn:hover {
+	color: #bd5126;
+  }
+
   .section-title {
 	font-size: 40px;
 	font-weight: 700;

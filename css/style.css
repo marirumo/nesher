@@ -21,7 +21,7 @@ btn--error {
   color: #666;
 }
 btn--success {
-  background-color: #52bf4a;
+  background-color: #df6f43;
   color: #fff;
 }
 btn--warning {
@@ -58,7 +58,7 @@ a {
   font-weight: 400;
   font-size: 14px;
   text-decoration: none;
-  color: var(--links);
+  color: #b9340c;
 }
 a:hover {
   text-decoration: none;
@@ -72,6 +72,10 @@ h5, h4 {
 
 .btn-primary {
   background-color: #b9340c;
+}
+
+btn:hover {
+  color: #bd5126;
 }
 
 .section-title {
@@ -132,7 +136,7 @@ btn--error {
   color: #666;
 }
 btn--success {
-  background-color: #52bf4a;
+  background-color: #df6f43;
   color: #fff;
 }
 btn--warning {
@@ -169,7 +173,7 @@ a {
   font-weight: 400;
   font-size: 14px;
   text-decoration: none;
-  color: var(--links);
+  color: #b9340c;
 }
 a:hover {
   text-decoration: none;
@@ -183,6 +187,10 @@ h5, h4 {
 
 .btn-primary {
   background-color: #b9340c;
+}
+
+btn:hover {
+  color: #bd5126;
 }
 
 .section-title {
@@ -279,13 +287,6 @@ h5, h4 {
   background-position: center center;
 }
 
-.mini-hero {
-  position: relative;
-  height: 90px;
-  background: url("./assets/hero.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
 
 .title-hero {
   font-size: 56px;
@@ -598,5 +599,3 @@ h2 {
     grid-column: 2;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
