@@ -1,49 +1,6 @@
 @import '../base/maps';
 @import '../base/variables';
 
-@media only screen and (min-width: 800px) {
-	.twocolumn-p {
-	  -webkit-column-count: 2;
-	  -moz-column-count: 2;
-	  column-count: 2;
-	  -webkit-column-width: 50%;
-	  -moz-column-width: 50%;
-	  column-width: 50%;
-	  -webkit-column-gap: 50px;
-	  -moz-column-gap: 50px;
-	  column-gap: 50px;
-	}
-  }
-  
-  @media only screen and (max-width: 360px) and (max-width: 768px) {
-	.fourcolumn-p {
-	  -webkit-column-count: 2;
-	  -moz-column-count: 2;
-	  column-count: 2;
-	  -webkit-column-width: 50%;
-	  -moz-column-width: 50%;
-	  column-width: 50%;
-	  -webkit-column-gap: 50px;
-	  -moz-column-gap: 50px;
-	  column-gap: 50px;
-	}
-  }
-  
-  @media only screen and (min-width: 769px) {
-	.fourcolumn-p {
-	  -webkit-column-count: 4;
-	  -moz-column-count: 4;
-	  column-count: 4;
-	  -webkit-column-width: 25%;
-	  -moz-column-width: 25%;
-	  column-width: 25%;
-	  -webkit-column-gap: 50px;
-	  -moz-column-gap: 50px;
-	  column-gap: 50px;
-	}
-  }
-  
-
 
 .hero {
 	position: relative;
@@ -51,56 +8,27 @@
 	background: url("../assets/hero.jpg") no-repeat;
 	background-size: cover;
 	background-position: center center;
-  }
-  
-  .mini-hero {
-	position: relative;
-	height: 90px;
-	background: url("./assets/hero.jpg") no-repeat;
-	background-size: cover;
-	background-position: center center;
-  }
   
   .title-hero {
 	font-size: 56px;
 	text-transform: uppercase;
-	color: var(--light-txt);
-	align-self: center;
-	justify-self: left;
-	padding-left: 56px;
-  }
-  
+	color: $light-txt;
+	}
+
   .p-hero {
 	font-size: 48px;
-	color: var(--light-txt);
-	align-self: center;
-	justify-self: left;
-	font-weight: lighter;
-  }
-  
-  @media only screen and (min-width: 360px) and (max-width: 768px) {
-	.title-hero {
-	  grid-template-columns: 1fr;
-	  grid-gap: 0px;
-	  font-size: 48px;
-	  text-transform: uppercase;
-	  text-align: center;
-	  color: var(--light-txt);
-	  align-self: center;
-	  justify-self: center;
-	  line-height: 56px;
-	}
-  
-	.p-hero {
-	  grid-template-columns: 1fr;
-	  grid-gap: 0px;
-	  font-size: 32px;
-	  text-align: center;
-	  color: var(--light-txt);
-	  align-self: center;
-	  justify-self: center;
-	  line-height: 56px;
-	  font-weight: lighter;
-	}
-  }
-  
+	color: #f8f1e9;
+ 	}
+
+	@media only screen and (min-width: 320px) and (max-width: 767px)  {
+		.p-hero {
+			overflow-wrap: break-word;
+			font-size: 40px;
+		  }
+		  .title-hero {
+			overflow-wrap: break-word;
+			font-size: 48px;
+		  }
+
+}
+}

@@ -3,9 +3,31 @@
 
 
 .mini-hero {
-    position: relative;
     height: 90px;
     background: url("../assets/hero.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
-  }
+  
+    
+      .p-hero {
+      font-size: 48px;
+      color: #f8f1e9;
+       }
+    
+      @media only screen and (min-width: 320px) and (max-width: 767px)  {
+        .p-hero {
+          overflow-wrap: break-word;
+          font-size: 40px;
+          }
+          .title-hero {
+          overflow-wrap: break-word;
+          font-size: 48px;
+          }
+    
+    }
+}
+    
+
+
+
+  

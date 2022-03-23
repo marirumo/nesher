@@ -1,32 +1,20 @@
 @import '../base/variables';
 
-.cafecito {
-    grid-row: 5;
-    grid-column: 1/-1;
-    grid-gap: 25px 25px;
-    display: grid;
-    grid-template-columns: 0.25fr 5fr 0.25fr;
-    background-color: #f0eff5;
-    padding: 100px 0;
-  
-    .section-title {
-      text-align: center;
-    }
-  
-    .content {
-      grid-column: 2;
-      align-self: center;
-    }
+.jumbotron {
+  background-color: $background;
+  margin: $margin-d;
+  padding: 56px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px)  {
+
+
+ .jumbotron {
+  padding: 16px;
+  margin: $margin-r;
   }
-  
-  @media only screen and (min-width: 1024px) {
-    .cafecito {
-      grid-column: 1/-1;
-    }
+
+  .btn {
+    margin-bottom: 24px;
   }
-  
-  @media only screen and (min-width: 900px) {
-    .cafecito .content {
-      grid-column: 2;
-    }
   }
